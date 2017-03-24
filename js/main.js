@@ -61,6 +61,19 @@ jQuery(document).ready(function($) {
 
 
 
+    /*---------------------------
+                                  Sliders
+    ---------------------------*/
+    $('.sertificates-slider').slick({
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    });
+
+
+
     /*----------------------------
                               SEND FORM
     -------------------------*/
