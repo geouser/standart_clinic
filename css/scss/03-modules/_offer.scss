@@ -1,6 +1,5 @@
 .offer {
     height: 1200px;
-    @include flex($direction: column, $alignI: center, $justify: center);
     
     background-image: url("../images/offer-main.jpg");
     background-position: 50% 50%;
@@ -11,5 +10,10 @@
     h1 {
         margin-bottom: 40px;
         text-transform: uppercase;
+    }
+    .wrapper {
+        position: relative;
+        height: 100%;
+        @include flex($direction: column, $alignI: center, $justify: center);
     }
 }
