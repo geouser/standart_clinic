@@ -68,6 +68,7 @@
 
 
 .textBlock {
+    position: relative;
     h2 {
         line-height: 1;
         margin-bottom: -12px;
@@ -87,5 +88,16 @@
              -webkit-box-shadow: 0 0 87px rgba(0,0,0,.55);
             box-shadow: 0 0px 87px rgba(0,0,0,.55);
         }
+        p {
+            margin-bottom: 20px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+    &--big {
+        .textBlock__text {
+            width: 1250px;
+        }   
     }
 }
