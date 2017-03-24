@@ -69,6 +69,9 @@
 
 .textBlock {
     position: relative;
+    .wrapper-fluid {
+        position: relative;
+    }
     h2 {
         line-height: 1;
         margin-bottom: -12px;
@@ -99,5 +102,11 @@
         .textBlock__text {
             width: 1250px;
         }   
+    }
+    &__relaventImg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: calc(100% - 1050px);
     }
 }
