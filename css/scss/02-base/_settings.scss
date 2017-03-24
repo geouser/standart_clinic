@@ -15,6 +15,11 @@ body {
 
 h1,h2 {
   font-weight: 900;
+  letter-spacing: 0.025em;
+  font-size: 100px;
+}
+h2 {
+  color: $blue;
 }
 
 // lAYOUT
