@@ -87,6 +87,18 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   Sliders
     ---------------------------*/
+    $('.sertificates-slider').on('init', function(event, slick) {
+        event.preventDefault();
+        $('.fancybox-sertificate-gallery').fancybox();
+    });
+    $('.sertificates-slider').slick({
+        arrows: false,
+        dots: false,
+        autoplay: true,
+        slidesToShow: 4,
+        slidesToScroll: 1
+    });
+
 
 
 
