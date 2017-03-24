@@ -55,9 +55,31 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   Fancybox
     ---------------------------*/
-    $('.fancybox').fancybox({
-        
+    $("[data-fancybox]").fancybox({
+        onComplete: function( instance, slide ) {
+            if ($(this).has('.slider-for')) {
+                $('.slider-for').slick({
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  arrows: false,
+                  fade: true,
+                  asNavFor: '.slider-nav'
+                });
+                $('.slider-nav').slick({
+                  slidesToShow: 8,
+                  slidesToScroll: 1,
+                  asNavFor: '.slider-for',
+                  dots: true,
+                  focusOnSelect: true
+                });
+            } 
+        },
+        afterClose: function( ) {
+            $('.slider-for').slick('unslick');
+            $('.slider-nav').slick('unslick');
+        }
     });
+
 
 
 
@@ -75,6 +97,7 @@ jQuery(document).ready(function($) {
         slidesToShow: 4,
         slidesToScroll: 1
     });
+
 
 
 
