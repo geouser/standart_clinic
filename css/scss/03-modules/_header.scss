@@ -8,13 +8,19 @@
         position: absolute;
         top: 0;
         left: 0;
-        height: 120%;
+        height: 240px;
         width: 100%;
         content: "";
         display: block;
         z-index: 0;
         opacity: 0;
          @include transition(all, .4s);
+        background: -moz-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(206,206,206,0) 81%); 
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(66,66,66,1)), color-stop(81%, rgba(206,206,206,0))); 
+        background: -webkit-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(206,206,206,0) 81%); 
+        background: -o-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(206,206,206,0) 81%); 
+        background: -ms-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(206,206,206,0) 81%); 
+        background: linear-gradient(to bottom, rgba(66,66,66,1) 0%, rgba(206,206,206,0) 81%);
   
     }
     &.hasScrolled.active {
