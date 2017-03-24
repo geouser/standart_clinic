@@ -28,6 +28,11 @@ h2 {
   color: $blue;
 }
 
+section {
+  position: relative;
+  z-index: 1;
+}
+
 .bg-skew {
   @media (min-width: 1201px) {
     background-image: url("../images/skew-bg-1.jpg");
