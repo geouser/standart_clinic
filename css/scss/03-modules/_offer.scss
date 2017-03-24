@@ -75,10 +75,11 @@
     h2 {
         line-height: 1;
         margin-bottom: -12px;
+        text-align: left;
     }
     &__text {
         padding: 100px;
-        padding-left: calc((100% - 1720) / 2);
+        padding-left: calc((100% - 1720px) / 2);
         width: 1050px;
         font-size: 24px;
         letter-spacing: 0.025em;
@@ -97,9 +98,6 @@
                 margin-bottom: 0;
             }
         }
-        .more {
-            margin-top: 85px;
-        }
     }
     &--big {
         .textBlock__text {
@@ -111,6 +109,12 @@
         right: 0;
         top: 0;
         max-width: calc(100% - 1050px);
+    }
+    .more {
+        margin-left: calc((100% - 1720px) / 2);
+        @media (max-width: 1740px) {
+            padding-left: 40px;
+        }
     }
 }
 
@@ -145,9 +149,19 @@
 }
 .service {
     margin: 40px 0;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity:.4;
+    @include transition(all,.2s);
+    &:hover {
+        -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(0%);
+        opacity: 1;
+    }
     img {
         display: block;
         margin: 0 auto 16px;
+        height: 135px;
     }
     p {
         display: block;
