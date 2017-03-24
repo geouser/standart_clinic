@@ -97,6 +97,9 @@
                 margin-bottom: 0;
             }
         }
+        .more {
+            margin-top: 85px;
+        }
     }
     &--big {
         .textBlock__text {
@@ -108,5 +111,24 @@
         right: 0;
         top: 0;
         max-width: calc(100% - 1050px);
+    }
+}
+
+.more {
+    color: $blue;
+    font-size: 24px;
+    font-weight: 900;
+    display: block;
+    &:after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 12px;
+        height: 17px;
+        width: 21px;
+        background-image: url("../images/more.svg");
+        -webkit-background-size: 100% 100%;
+             -o-background-size: 100% 100%;
+                background-size: 100% 100%;
     }
 }
