@@ -1,20 +1,5 @@
 .footer {
     position: relative;
-    z-index: 0;
-
-    &:before {
-        content: '';
-        width: 400px;
-        height: 200px;
-        background-image: url(../images/teath-sertificates.svg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        background-position: 50% 0;
-        position: absolute;
-        left: 40px;
-        bottom: 100%;
-        z-index: -1;
-    }
 
 
     &-top {

@@ -31,6 +31,22 @@ h2 {
 section {
   position: relative;
   z-index: 1;
+
+  &:not(.offer):last-of-type {
+    &:after {
+      content: '';
+      width: 400px;
+      height: 200px;
+      background-image: url(../images/teath-sertificates.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 50% 0;
+      position: absolute;
+      left: 40px;
+      bottom: 0;
+      z-index: -1;
+    }
+  }
 }
 
 .bg-skew {
