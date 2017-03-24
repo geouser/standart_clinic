@@ -1,3 +1,38 @@
 .sertificates {
     padding: 75px 0;
+    background-image: url(../images/teath-sertificates.svg);
+    background-repeat: no-repeat;
+}
+
+.sertificates-slider {
+
+    .slick-list {
+        padding: 15px 0;
+    }
+
+    .slide {
+        padding: 0 10px;
+
+        a {
+            display: block;
+            
+
+            &:hover img {
+                -webkit-transform: scale(1.04);
+                -ms-transform: scale(1.04);
+                -o-transform: scale(1.04);
+                transform: scale(1.04);
+            }
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            border: 5px solid $blue;
+            margin: 0 auto;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+    }
 }
