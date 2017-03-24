@@ -1,0 +1,39 @@
+.breadcrumbs {
+    text-align: left;
+    margin-bottom: 32px;
+
+    span[property=itemListElement] {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 18px;
+
+        a {
+            color: inherit;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        &:after {
+            content: '';
+            width: 18px;
+            height: 12px;
+            display: inline-block;
+            vertical-align: middle;
+            background-image: url(../images/more.svg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            margin: 0 4px;
+        }
+
+        &:last-child {
+            color: $blue;
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
