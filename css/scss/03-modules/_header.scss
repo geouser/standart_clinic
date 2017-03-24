@@ -21,7 +21,7 @@
         background: -o-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(206,206,206,0) 81%); 
         background: -ms-linear-gradient(top, rgba(66,66,66,1) 0%, rgba(206,206,206,0) 81%); 
         background: linear-gradient(to bottom, rgba(66,66,66,1) 0%, rgba(206,206,206,0) 81%);
-  
+        pointer-events: none;
     }
     &.hasScrolled.active {
         &:after {
