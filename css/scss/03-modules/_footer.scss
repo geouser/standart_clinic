@@ -1,7 +1,14 @@
 .footer {
+    position: relative;
+
+
     &-top {
         background-color: #7FC0E3;
         padding: 15px 0;
+
+        .wrapper-fluid {
+            text-align: left;
+        }
     }
 
     &-bottom {
