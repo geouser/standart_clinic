@@ -1,0 +1,114 @@
+.team {
+    .flex-row {
+        -webkit-justify-content: space-between;
+            justify-content: space-between;
+    }
+}
+.worker {
+    width: 100%;
+    background-color: #f2f2f2;
+    padding: 90px 20% 90px 0;
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    padding-left: calc((100% - 1720px) / 2);
+    width: 49.5%;
+    margin-bottom: 1%;
+    @media (max-width: 1740px) {
+            padding-left: 40px;
+        }
+    &__title {
+        color: $blue;
+        text-transform: uppercase;
+        display: block;
+        font-weight: 900;
+        font-size: 30px;
+    }
+    &__position {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 40px;
+        display: block;
+        color: $blue;
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    &__certificates {
+        margin-top: 45px;
+        color: $blue;
+        display: block;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 24px;
+    }
+}
+
+.worker__gallery {
+    background: #EEEEEF;
+    width: 100%;
+    z-index: 100;
+    padding: 0 !important;
+    .wrap {
+        @include flex($alignI: flex-end);
+    }
+    .left {
+        width: 70%;
+        padding-left: 80px;
+        position: relative;
+        bottom: -100px;
+    }
+    .right {
+        width: 30%;
+        position: relative;
+        height: 100%;
+        bottom: -115px;
+        z-index: 5;
+        padding-right: 80px;
+    }
+    .bottom {
+        width: 100%;
+        height: 30%;
+        background-color: #7fc0e3;
+        padding-top: 140px;
+        padding-bottom: 60px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    &__person {
+        display: block;
+        width: 100%;
+        padding-left: 5%;
+        z-index: 2;
+        margin: 0 auto;
+        color: #000;
+        img {
+            width: 100%;
+        }
+        .worker__title,
+        .worker__position {
+            color: #000;
+        }
+        .worker__position {
+            text-transform: none;
+        }
+    }
+    .slider-for {
+        width: 95%;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 4;
+        box-shadow: 0px 30px 87px 0px rgba(0, 0, 0, 0.54);
+
+    }
+    .slider-nav {
+        position: relative;
+        z-index: 4;
+        .slick-slide {
+            padding: 10px;
+            img {
+                width: 100%;
+                border: 2px solid $blue;
+            }
+        }
+    }
+}

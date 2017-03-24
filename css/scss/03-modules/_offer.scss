@@ -129,7 +129,7 @@
     .more {
         margin-left: calc((100% - 1720px) / 2);
         @media (max-width: 1740px) {
-            padding-left: 40px;
+            margin-left: 40px;
         }
     }
 }
