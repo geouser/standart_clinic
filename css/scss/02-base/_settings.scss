@@ -29,9 +29,19 @@ h2 {
 }
 
 .bg-skew {
-  background-image: url("../images/skew-bg-1.jpg");
-  background-position: 50% 0;
-  background-repeat: repeat;
+  @media (min-width: 1201px) {
+    background-image: url("../images/skew-bg-1.jpg");
+    background-position: 50% 0;
+    background-repeat: repeat;  
+  }  
+
+  @media (min-width: 1921px) {
+    background-size: 100% auto;
+  }
+
+  @media (max-width: 1920px) {
+    background-size: auto 100%;
+  }
 }
 
 // lAYOUT
