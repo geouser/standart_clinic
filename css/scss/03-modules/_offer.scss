@@ -67,19 +67,25 @@
 }
 
 
-.main-text-block {
+.textBlock {
     h2 {
         line-height: 1;
         margin-bottom: -12px;
     }
     &__text {
-        background-color: $blue;
-        color: #FFF;
         padding: 100px;
+        padding-left: calc((100% - 1720) / 2);
         width: 1050px;
         font-size: 24px;
         letter-spacing: 0.025em;
-        -webkit-box-shadow: 0 0 87px rgba(0,0,0,.55);
-        box-shadow: 0 0px 87px rgba(0,0,0,.55);
+        @media (max-width: 1740px) {
+            padding-left: 40px;
+        }
+        &--main {
+            background-color: $blue;
+            color: #FFF;
+             -webkit-box-shadow: 0 0 87px rgba(0,0,0,.55);
+            box-shadow: 0 0px 87px rgba(0,0,0,.55);
+        }
     }
 }
