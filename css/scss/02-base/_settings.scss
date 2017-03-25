@@ -33,6 +33,9 @@ section {
   z-index: 1;
 
   &:not(.offer):last-of-type {
+    overflow: hidden;
+    min-height: 630px;
+    padding-top: 300px;
     &:after {
       content: '';
       width: 400px;
@@ -46,23 +49,32 @@ section {
       bottom: 0;
       z-index: 1;
     }
+    &:before {
+        width: 100%;
+        content: "";
+        display: block;
+        height: 100%;
+        position: absolute;
+        top: 20%;
+        left: 0;
+        pointer-events: none;
+        -webkit-transform: skewY(7.2deg);
+        -moz-transform: skewY(7.2deg);
+        -ms-transform: skewY(7.2deg);
+        -o-transform: skewY(7.2deg);
+        transform: skewY(7.2deg);
+        background-color: #e3e3e3 ;
+        z-index: 0;
+    }
   }
 }
 
-.bg-skew {
+.home-section {
   @media (min-width: 1201px) {
     background-image: url("../images/skew-bg-1.jpg");
-    background-position: 50% 0;
+    background-position: 50% 25%;
     background-repeat: no-repeat;  
   }  
-
-  @media (min-width: 1900px) {
-    background-size: 100% auto;
-  }
-
-  @media (max-width: 1900px) {
-    background-size: auto 100%;
-  }
 }
 
 // lAYOUT

@@ -13,7 +13,7 @@
         color: #FFF;
         max-width: 670px;
         & + .book-block {
-            margin-top: 145px;
+            margin-top: 125px;
         }
     }
     .wrapper {
@@ -21,6 +21,7 @@
         height: 100%;
         text-align: left;
         @include flex($direction: column, $alignI: flex-start, $justify: center);
+        padding-bottom: 200px;
     }
     &--big {
         height: 1200px;
@@ -40,6 +41,31 @@
             padding-left: 0;
         }
     }
+    &:after {
+        width: 100%;
+        content: "";
+        display: block;
+        height: 250px;
+        position: absolute;
+        bottom: -124px;
+        pointer-events: none;
+        -webkit-transform: skewY(7.2deg);
+        -moz-transform: skewY(7.2deg);
+        -ms-transform: skewY(7.2deg);
+        -o-transform: skewY(7.2deg);
+        transform: skewY(7.2deg);
+        background-color: #fff;
+        z-index: 0;
+    }
+
+}
+
+.offer  + section,
+.offer  + div {
+    margin-top: -60px;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
 }
 
 
@@ -129,6 +155,7 @@
         }
         p {
             margin-bottom: 20px;
+            line-height: 1.2;
             &:last-child {
                 margin-bottom: 0;
             }
@@ -161,13 +188,19 @@
         position: absolute;
         right: 0;
         top: 60px;
-        max-width: calc(100% - 1050px);
+        max-width: calc(100% - 970px);
     }
     .more {
         margin-left: calc((100% - 1720px) / 2);
+        margin-top: -10px;
         @media (max-width: 1740px) {
             margin-left: 40px;
         }
+    }
+}
+.home-section {
+    .textBlock__relaventImg {
+        right: -3%;
     }
 }
 
@@ -201,8 +234,10 @@
 .services {
     background-image: url("../images/tool-3.png");
     background-repeat: no-repeat;
-    background-position: 104% 50%;
-    margin-top: 40px;
+    background-position: 104% 90%;
+    margin-top: 170px;
+    padding-bottom: 0;
+    margin-bottom: -40px;
 }
 .services-list {
     width: 900px;
