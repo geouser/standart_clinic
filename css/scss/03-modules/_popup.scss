@@ -31,6 +31,10 @@
         text-align: center;
         height: 40px;
         display: block;
+        max-width: 100%;
+        @media (max-width: 600px) {
+            margin-top: 25px;
+        }
     }
 }
 
