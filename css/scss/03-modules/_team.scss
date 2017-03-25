@@ -163,6 +163,12 @@
         -webkit-order: 2;
             -ms-order: 2;
                 order: 2;
+        @media (max-width: 1300px) {
+            padding: 120px 40px 40px;
+        }
+        @media (max-width: 600px) {
+            padding: 80px 15px 20px;
+        }
     }
     &__person {
         display: block;
