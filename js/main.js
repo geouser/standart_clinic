@@ -39,13 +39,11 @@ jQuery(document).ready(function($) {
         var $document = $(document),
             $element = $('.menu-button'),
             $element2 = $('header'),
-            $element3 = $('.book-block'),
             className = 'hasScrolled';
 
         $document.scroll(function() {
             $element.toggleClass(className, $document.scrollTop() >= 1);
             $element2.toggleClass(className, $document.scrollTop() >= 1);
-            $element3.toggleClass(className, $document.scrollTop() >= $(window).height() / 2);
         });
     });
     
@@ -90,6 +88,10 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $('.question').click(function(){
+        $(this).toggleClass('opened');
+        $(this).children('.question__answer').slideToggle();
+    });
 
 
 

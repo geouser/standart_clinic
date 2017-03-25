@@ -1,12 +1,47 @@
+.gallery-section {
+    padding-bottom: 300px;
+    background-image: url(../images/skew-bg-services.jpg);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    .textBlock__relaventImg {
+        right: 0;
+        top: 20%;
+    }
+}
+
 .gallery {
     .col-4 {
         padding: 6px;
     }
     a {
         display: block;
+        position: relative;
         img {
             width: 100%;
             display: block;
+        }
+        &:after {
+            opacity: 0;
+            visibility: hidden;
+            @include transition(all,.2s);
+            display: block;
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(255,255,255,.9);
+            background-repeat: no-repeat;
+                    background-image: url("../images/search.svg");
+        background-position: 50% 50%;
+        -webkit-background-size: 40px 40px;
+             -o-background-size: 40px 40px;
+                background-size: 40px 40px;
+        }
+        &:hover:after {
+            opacity: 1;
+            visibility: visible;
         }
     }
 }

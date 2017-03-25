@@ -1,6 +1,8 @@
 .offer {
     height: 725px;
-    
+    &--small {
+        height: 450px;
+    }
     background-position: 50% 50%;
     -webkit-background-size: cover;
          -o-background-size: cover;
@@ -45,17 +47,11 @@
     font-size: 16px;
     font-weight: 900;
     color: $blue;
-    position: fixed;
+    position: absolute;
     right: 0;
-    top: 40%;
+    top: 60px;
     z-index: 10;
-    opacity: 0;
-    visibility: visible;
     @include transition(all,.2s);
-    &.hasScrolled {
-        opacity: 1;
-        visibility: visible;
-    }
     &__title {
         font-size: 36px;
         letter-spacing: 0.025em;
@@ -149,6 +145,15 @@
             padding-top: 85px;
             padding-bottom: 85px;
             padding-right: 85px;
+            font-size: 18px;
+        }   
+    }
+    &--large {
+        .textBlock__text {
+            width: 1360px;
+            padding-top: 90px;
+            padding-bottom:90px;
+            padding-right:90px;
             font-size: 18px;
         }   
     }
