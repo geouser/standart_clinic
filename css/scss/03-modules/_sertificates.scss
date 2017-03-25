@@ -1,5 +1,11 @@
 .sertificates {
     padding: 160px 0 75px;
+    @media (max-width: 1700px) {
+        padding-top: 120px;
+    }
+    @media (max-width: 1500px) {
+        padding-top: 60px;
+    }
 }
 
 .sertificates-slider {

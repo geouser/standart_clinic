@@ -74,6 +74,17 @@ section {
       left: 40px;
       bottom: 0;
       z-index: 1;
+        @media (max-width: 1500px) {
+            width: 320px;
+            height: 180px;
+        }
+        @media (max-width: 600px) {
+            width: 266px;
+            height: 164px;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
     }
   }
 }
@@ -92,6 +103,41 @@ section {
   }
   @media (max-width: 1500px) {
       background-position: 50% 15%, 50% 100%;
+  }
+  @media (max-width: 1300px) {
+      background-image: url(../images/skew-bg-2.jpg);
+      background-position: 50% 100%;
+      -webkit-background-size: 140% auto;
+           -o-background-size: 140% auto;
+              background-size: 140% auto;
+  }
+  @media (max-width: 900px) {
+      background-image: url(../images/skew-bg-2.jpg);
+      background-position: 50% 100%;
+      -webkit-background-size: 160% auto;
+           -o-background-size: 160% auto;
+              background-size: 160% auto;
+  }
+  @media (max-width: 700px) {
+      background-image: url(../images/skew-bg-2.jpg);
+      background-position: 50% 100%;
+      -webkit-background-size: 180% auto;
+           -o-background-size: 180% auto;
+              background-size: 180% auto;
+  }
+  @media (max-width: 500px) {
+      background-image: url(../images/skew-bg-2.jpg);
+      background-position: 50% 100%;
+      -webkit-background-size: 200% auto;
+           -o-background-size: 200% auto;
+              background-size: 200% auto;
+  }
+  @media (max-width: 400px) {
+      background-image: url(../images/skew-bg-2.jpg);
+      background-position: 50% 100%;
+      -webkit-background-size: 220% auto;
+           -o-background-size: 220% auto;
+              background-size: 220% auto;
   }
 }
 
