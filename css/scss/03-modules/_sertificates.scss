@@ -3,7 +3,8 @@
 }
 
 .sertificates-slider {
-
+    position: relative;
+    z-index: 2;
     .slick-list {
         padding: 15px 0;
     }

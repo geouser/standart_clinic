@@ -38,6 +38,7 @@ section {
   }
 
   &:not(.offer):last-of-type {
+    overflow: hidden;
     &:after {
       content: '';
       width: 400px;
@@ -54,20 +55,12 @@ section {
   }
 }
 
-.bg-skew {
+.home-section {
   @media (min-width: 1201px) {
-    background-image: url("../images/skew-bg-1.jpg");
-    background-position: 50% 0;
+    background-image: url("../images/skew-bg-1.jpg"), url(../images/skew-bg-services.jpg);
+    background-position: 50% 25%, 50% 100%;
     background-repeat: no-repeat;  
   }  
-
-  @media (min-width: 1900px) {
-    background-size: 100% auto;
-  }
-
-  @media (max-width: 1900px) {
-    background-size: auto 100%;
-  }
 }
 
 // lAYOUT
