@@ -1,0 +1,64 @@
+.book-block {
+    font-size: 16px;
+    font-weight: 900;
+    color: $blue;
+
+    &.fixed {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        width: 275px;
+    }
+
+
+    &__title {
+        font-size: 36px;
+        letter-spacing: 0.025em;
+        display: block;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+    &__call {
+        background-color: $blue;
+        color: #FFF;
+        line-height: 42px;
+        padding: 0 20px;
+        display: inline-block;
+        text-align: center;
+        -webkit-border-radius: 9px;
+                border-radius: 9px;
+        i {
+            display: inline-block;
+            vertical-align: middle;
+            content: "";
+            margin-right: 2px;
+            margin-top: -3px;
+            width: 16px;
+            height: 17px;
+            background-image: url("../images/call.svg");
+            -webkit-background-size: 100% 100%;
+                 -o-background-size: 100% 100%;
+                    background-size: 100% 100%;
+        }
+    }
+
+    &.fixed &__call {
+        margin-top: 20px;
+        display: block;
+        border-radius: 0;
+    }
+
+    span {
+        span {
+            font-weight: 300;
+        }
+    }
+    p {
+        margin-top: 20px;
+    }
+
+    &.fixed p {
+        padding-left: 20px;
+    }
+}
