@@ -217,6 +217,15 @@
         color: $blue;
         &.top {
             margin-bottom: 80px;
+            @media (max-width: 1500px) {
+                margin-bottom: 60px;
+            }
+            @media (max-width: 1500px) {
+                margin-bottom: 40px;
+            }
+            @media (max-width: 600px) {
+                margin-bottom: 20px;
+            }
         }
         @media (max-width: 1500px) {
             margin-bottom: -10px;
@@ -242,6 +251,7 @@
         }
         @media (max-width: 1500px) {
             padding: 60px;
+            padding-left: 40px;
             width: 800px;
             font-size: 20px;
         }
@@ -291,6 +301,7 @@
                 padding: 60px;
                 width: 900px;
                 font-size: 17px;
+                padding-left: 40px;
             }
             @media (max-width: 1200px) {
                 padding-left: 15px;
@@ -349,7 +360,7 @@
 .textBlock--team {
     .textBlock__relaventImg {
         right: -3%;
-        top: 14%;
+        top: 6%;
         @media (max-width: 1700px) {
             right: 0;
         }

@@ -12,9 +12,17 @@
         padding-bottom: 0;
     }
     &-bg {
-        background-image: url("../images/apple.jpg"), url('../images/teethbrush.jpg');
+        background-image: url("../images/apple.jpg"), url('../images/teethbrush.png');
     background-repeat: no-repeat;
-    background-position: 100% 20%, 100% 90%;
+    background-position: 100% 20%, 100% 100%;
+    @media (max-width: 1500px) {
+        -webkit-background-size: 35% auto, 30% auto;
+             -o-background-size: 35% auto, 30% auto;
+                background-size: 35% auto, 30% auto;
+        @media (max-width: 1300px) {
+            background-image: none;
+        }
+    }
     }
     &:before {
         position: absolute;
@@ -38,6 +46,12 @@
 
 .question {
     margin-bottom: 20px;
+    @media (max-width: 1500px) {
+        margin-bottom: 10px;
+    }
+    @media (max-width: 600px) {
+        margin-bottom: 4px;
+    }
     &__title {
         display: inline-block;
         border: 3px solid  $blue;
@@ -47,6 +61,16 @@
         color: $blue;
         cursor: pointer;
         @include transition(all,.4s);
+        @media (max-width: 1500px) {
+            font-size: 16px;
+            border: 2px solid  $blue;
+            padding: 16px 15px 14px;
+        }
+        @media (max-width: 600px) {
+            font-size: 16px;
+            border: 1px solid  $blue;
+            padding: 12px 10px 10px;
+        }
         &:after {
             display: inline-block;
             vertical-align: middle;
@@ -59,11 +83,19 @@
             -webkit-background-size: 100% 100%;
                  -o-background-size: 100% 100%;
                     background-size: 100% 100%;
+            @media (max-width: 1500px) {
+                width: 36px;
+                height: 24px;
+                margin-left: 20px;
+            }
         }
     }
     &__answer {
         display: block;
         display: none;
+        @media (max-width: 1500px) {
+            margin-bottom: 20px;
+        }
     }
     &.opened {
         .question__title {
