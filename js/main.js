@@ -107,14 +107,14 @@ jQuery(document).ready(function($) {
         slidesToScroll: 1
     });
 
-    $(document).on('click', '.sertificates-slider a', function(e) {
+    /*$(document).on('click', '.sertificates-slider a', function(e) {
         e.preventDefault();
         var $collection = $( '.sertificates-slider a' );
       
         $.fancybox.open( $collection, {}, $collection.index( this )  );
       
         return false;
-    });
+    });*/
 
 
 
@@ -179,21 +179,8 @@ jQuery(document).ready(function($) {
         var lat = $('#map_canvas').data('lat');
         var long = $('#map_canvas').data('lng');
 
-        var mapCenterCoord = new google.maps.LatLng(lat, long+0.002);
+        var mapCenterCoord = new google.maps.LatLng(lat, long);
         var mapMarkerCoord = new google.maps.LatLng(lat, long);
-        if ( $(window).width() <= 1000 ) {
-            mapCenterCoord = new google.maps.LatLng(lat, long);
-            mapMarkerCoord = new google.maps.LatLng(lat, long);
-        }
-        $(window).resize(function(event) {
-            if ( $(window).width() <= 1000 ) {
-                mapCenterCoord = new google.maps.LatLng(lat, long);
-                mapMarkerCoord = new google.maps.LatLng(lat, long);
-            } else {
-                mapCenterCoord = new google.maps.LatLng(lat, long+0.002);
-                mapMarkerCoord = new google.maps.LatLng(lat, long);
-            }
-        });
 
         var mapOptions = {
             center: mapCenterCoord,
