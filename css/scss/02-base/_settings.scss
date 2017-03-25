@@ -11,6 +11,14 @@ body {
   font-size: 18px;
   letter-spacing: 0.025em;
   font-weight: 300;
+  -ms-overflow-x: hidden;
+      overflow-x: hidden;
+  @media (max-width: 800px) {
+      font-size: 15px;
+  }
+  @media (max-width: 600px) {
+      font-size: 14px;
+  }
 }
 
 b,
@@ -23,6 +31,21 @@ h1,h2 {
   font-weight: 900;
   letter-spacing: 0.025em;
   font-size: 100px;
+   @media (max-width: 1700px) {
+        font-size: 90px;
+    }
+    @media (max-width: 1500px) {
+        font-size: 72px;
+    }
+    @media (max-width: 800px) {
+        font-size: 58px;
+    }
+    @media (max-width: 600px) {
+            font-size: 48px;
+        }
+        @media (max-width: 400px) {
+            font-size: 38px;
+        }
 }
 h2 {
   color: $blue;
@@ -56,11 +79,20 @@ section {
 }
 
 .home-section {
-  @media (min-width: 1201px) {
+
     background-image: url("../images/skew-bg-1.jpg"), url(../images/skew-bg-2.jpg);
     background-position: 50% 25%, 50% 100%;
     background-repeat: no-repeat;  
-  }  
+    -webkit-background-size: 100% auto;
+         -o-background-size: 100% auto;
+            background-size: 100% auto;
+
+  @media (max-width: 1700px) {
+      background-position: 50% 17%, 50% 100%;
+  }
+  @media (max-width: 1500px) {
+      background-position: 50% 15%, 50% 100%;
+  }
 }
 
 // lAYOUT
@@ -68,9 +100,9 @@ section {
 .wrapper {
 	width: 1200px;
 	margin: 0 auto;
-  padding: 0 10px;
+    padding: 0 10px;
 	text-align: center;
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .wrapper-fluid {
@@ -82,6 +114,14 @@ section {
   @media (max-width: 1740px) {
     width: 100%;
     padding: 0 40px;
+  }
+  @media (max-width: 1740px) {
+    width: 100%;
+    padding: 0 40px;
+  }
+  @media (max-width: 1200px) {
+    width: 100%;
+    padding: 0 15px;
   }
 }
 
