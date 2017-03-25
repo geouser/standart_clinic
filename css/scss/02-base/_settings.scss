@@ -32,6 +32,11 @@ section {
   position: relative;
   z-index: 1;
 
+  & > * {
+    position: relative;
+    z-index: 2;
+  }
+
   &:not(.offer):last-of-type {
     &:after {
       content: '';
@@ -132,4 +137,17 @@ section {
 }
 :-moz-placeholder {
   opacity: 1;
+}
+
+
+.Прямоугольник_28 {
+  background-image: -moz-linear-gradient( 90deg, rgb(206,206,206) 19%, rgba(206,206,206,0.01) 19%, rgb(66,66,66) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(206,206,206) 19%, rgba(206,206,206,0.01) 19%, rgb(66,66,66) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(206,206,206) 19%, rgba(206,206,206,0.01) 19%, rgb(66,66,66) 100%);
+  position: absolute;
+  left: 0px;
+  top: -60px;
+  width: 1920px;
+  height: 239px;
+  z-index: 128;
 }
