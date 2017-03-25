@@ -81,6 +81,10 @@ jQuery(document).ready(function($) {
         }
     });
 
+    $('.question').click(function(){
+        $(this).toggleClass('opened');
+        $(this).children('.question__answer').slideToggle();
+    });
 
 
 

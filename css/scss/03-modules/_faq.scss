@@ -1,0 +1,76 @@
+.faq-section {
+    padding-bottom: 210px;
+    position: relative;
+    overflow: hidden;
+    .book-block {
+        top: 25%;
+    }
+    &-bg {
+        background-image: url("../images/apple.jpg"), url('../images/teethbrush.jpg');
+    background-repeat: no-repeat;
+    background-position: 100% 20%, 100% 90%;
+    }
+    &:before {
+        position: absolute;
+        top: 0;
+        left: -20%;
+        bottom: 0;
+        margin: auto;
+        height: 30%;
+        width: 140%;
+        -webkit-transform: rotate(8deg);
+           -moz-transform: rotate(8deg);
+            -ms-transform: rotate(8deg);
+             -o-transform: rotate(8deg);
+                transform: rotate(8deg);
+        background-color: #f5f5f5;
+        display: block;
+        content: "";
+        z-index: -1;
+    }
+}
+
+.question {
+    margin-bottom: 20px;
+    &__title {
+        display: inline-block;
+        border: 3px solid  $blue;
+        padding: 18px 22px 16px;
+        font-size: 18px;
+        font-weight: 900;
+        color: $blue;
+        cursor: pointer;
+        @include transition(all,.4s);
+        &:after {
+            display: inline-block;
+            vertical-align: middle;
+            width: 46px;
+            content: "";
+            height: 34px;
+            margin-left: 30px;
+            @include transition(all,.4s);
+            background-image: url("../images/more.svg");
+            -webkit-background-size: 100% 100%;
+                 -o-background-size: 100% 100%;
+                    background-size: 100% 100%;
+        }
+    }
+    &__answer {
+        display: block;
+        display: none;
+    }
+    &.opened {
+        .question__title {
+            color: #000;
+            border-color: #000;
+            &:after {
+                background-image: url("../images/more-dark.svg");
+                -webkit-transform: rotate(90deg);
+                   -moz-transform: rotate(90deg);
+                    -ms-transform: rotate(90deg);
+                     -o-transform: rotate(90deg);
+                        transform: rotate(90deg);
+            }
+        }
+    }
+}
