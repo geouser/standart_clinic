@@ -1,4 +1,6 @@
 .service-tabs {
+    z-index: 1;
+    
     &__header {
         background-image: url(../images/tabs-header.jpg);
         background-position: 50% 100%;
