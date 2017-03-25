@@ -1,0 +1,19 @@
+.book-block {
+    &.fixed {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 3;
+        width: 275px;
+    }
+
+    &.fixed &__call {
+        margin-top: 20px;
+        display: block;
+        border-radius: 0;
+    }
+
+    &.fixed p {
+        padding-left: 20px;
+    }
+}
