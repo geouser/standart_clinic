@@ -344,6 +344,9 @@
     .textBlock__relaventImg {
         right: -3%;
         top: 14%;
+        @media (max-width: 1700px) {
+            right: 0;
+        }
     }
 }
 
