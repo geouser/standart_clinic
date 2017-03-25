@@ -1,0 +1,103 @@
+.service-tabs {
+    &__header {
+        background-image: url(../images/tabs-header.jpg);
+        background-position: 50% 100%;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        padding-bottom: 320px;
+
+        .textBlock__text {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &__body {
+        background-color: #F5F5F5;
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+
+        .textBlock__text {
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+}
+
+.tab-controls {
+    &-item {
+        display: inline-block;
+        position: relative;
+        margin-right: 14px;
+        z-index: 1;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        margin-bottom: 18px;
+
+        a {
+            color: $blue;
+            display: block;
+            border: 3px solid $blue;
+            font-weight: 900;
+            font-size: 24px;
+            padding: 18px 100px 18px 30px;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+        }
+
+        .arrow {
+            display: inline-block;
+            width: 40px;
+            position: absolute;
+            right: 28px;
+            top: 50%;
+            margin-top: -20px;
+            z-index: -1;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+
+            svg {
+                display: block;
+                width: 100%;
+                height: auto!important;
+
+                path {
+                    -webkit-transition: all 0.3s ease;
+                    -o-transition: all 0.3s ease;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+
+        &.ui-state-active {
+            background-color: $blue;
+
+            a {
+                color: #fff;
+            }
+
+            .arrow {
+                -webkit-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transform: rotate(90deg);
+
+                path {
+                    fill: #fff!important;
+                }
+            }
+        }
+    }
+}
+
+
+.tab-content {
+    padding-bottom: 270px;
+
+    h2 {
+        margin-bottom: 74px;
+    }
+}

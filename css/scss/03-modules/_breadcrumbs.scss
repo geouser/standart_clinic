@@ -1,6 +1,13 @@
 .breadcrumbs {
     text-align: left;
     margin-bottom: 32px;
+    margin-top: -80px;
+    z-index: 2;
+    position: relative;
+
+    .wrapper-fluid {
+        text-align: left;
+    }
 
     span[property=itemListElement] {
         display: inline-block;

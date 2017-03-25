@@ -26,6 +26,13 @@ function exist(el){
 jQuery(document).ready(function($) {
 
     /*---------------------------
+                                  Tabs
+    ---------------------------*/
+    if ( exist('.service-tabs') ) {
+        $('.service-tabs').tabs();
+    }
+
+    /*---------------------------
                                   ADD CLASS ON SCROLL
     ---------------------------*/
     $(function() { 
