@@ -86,18 +86,19 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   Sliders
     ---------------------------*/
-    $('.sertificates-slider').on('init', function(event, slick) {
+    $('.sertificates-slider').on('click', 'a', function(event) {
         event.preventDefault();
-        $('.fancybox-sertificate-gallery').fancybox();
+        $(this).fancybox();
     });
     $('.sertificates-slider').slick({
         arrows: false,
         dots: false,
-        autoplay: true,
+        autoplay: false,
         slidesToShow: 4,
         slidesToScroll: 1
     });
 
+    
 
 
 
