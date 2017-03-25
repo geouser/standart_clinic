@@ -61,6 +61,7 @@ jQuery(document).ready(function($) {
                 $('.slider-for').slick({
                   slidesToShow: 1,
                   slidesToScroll: 1,
+                  dots: false,
                   arrows: false,
                   fade: true,
                   asNavFor: '.slider-nav'
@@ -69,8 +70,8 @@ jQuery(document).ready(function($) {
                   slidesToShow: 8,
                   slidesToScroll: 1,
                   asNavFor: '.slider-for',
-                  dots: true,
-                  focusOnSelect: true
+                  dots: false,
+                  arrows: true
                 });
             } 
         },

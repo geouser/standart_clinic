@@ -26,29 +26,19 @@
 .slick-arrow:focus,
 .slick-arrow:active,
 .slick-arrow:hover {
-    width: 70px;
-    height: 90px;
+    width: 85px;
+    height: 65px;
     z-index: 10;
     @include transition(all, .2s);
-    background-color:  peru;
+    background-color:  rgba(255,255,255,.8);
     -webkit-border-radius: 2px;
             border-radius: 2px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    -webkit-background-size: 23px 20px;
-         -o-background-size: 23px 20px;
-            background-size: 23px 20px;
-    @media (max-width: 800px) {
-        width: 50px;
-        height: 70px;
-    }
-    @media (max-width: 600px) {
-        width: 30px;
-        height: 50px;
-        -webkit-background-size: 16px 16px;
-         -o-background-size: 16px 16px;
-            background-size: 16px 16px;
-    }
+    -webkit-background-size: 14px 20px;
+         -o-background-size: 14px 20px;
+            background-size: 14px 20px;
+
     &:before {
         display: none;
     }
@@ -59,12 +49,12 @@
 .slick-next,
 .slick-next:hover,
 .slick-next:focus {
-    right: 0;
+    right: -60px;
     background-image: url("../images/right-arrow.svg");
 }
 .slick-prev,
 .slick-prev:hover,
 .slick-prev:focus {
-    left: 0;
+    left: -60px;
     background-image: url("../images/left-arrow.svg");
 }
