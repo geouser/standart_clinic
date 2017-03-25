@@ -1,6 +1,8 @@
 .offer {
     height: 725px;
-    
+    &--small {
+        height: 450px;
+    }
     background-position: 50% 50%;
     -webkit-background-size: cover;
          -o-background-size: cover;

@@ -1,9 +1,15 @@
 .faq-section {
-    padding-bottom: 210px;
+    padding-bottom: 300px;
     position: relative;
     overflow: hidden;
+    background: transparent;
+    margin-top: -80px;
     .book-block {
         top: 25%;
+    }
+    .textBlock__text {
+        padding-top: 0;
+        padding-bottom: 0;
     }
     &-bg {
         background-image: url("../images/apple.jpg"), url('../images/teethbrush.jpg');
