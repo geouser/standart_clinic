@@ -16,9 +16,9 @@
         opacity: 0;
          @include transition(all, .4s);
         
-        background-image: -moz-linear-gradient( 90deg, rgb(206,206,206) 19%, rgba(206,206,206,0.01) 19%, rgb(66,66,66) 100%); 
-background-image: -webkit-linear-gradient( 90deg, rgb(206,206,206) 19%, rgba(206,206,206,0.01) 19%, rgb(66,66,66) 100%); 
-background-image: -ms-linear-gradient( 90deg, rgb(206,206,206) 19%, rgba(206,206,206,0.01) 19%, rgb(66,66,66) 100%);
+        background-image: -moz-linear-gradient( 90deg, rgb(206,206,206) 0%, rgba(206,206,206,0.01) 0%, rgba(66,66,66, 0.4) 100%); 
+        background-image: -webkit-linear-gradient( 90deg, rgb(206,206,206) 0%, rgba(206,206,206,0.01) 0%, rgba(66,66,66, 0.4) 100%); 
+        background-image: -ms-linear-gradient( 90deg, rgb(206,206,206) 0%, rgba(206,206,206,0.01) 0%, rgba(66,66,66, 0.4) 100%);
         pointer-events: none;
     }
     &.active {
