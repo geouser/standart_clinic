@@ -61,7 +61,6 @@ section {
   }
 
   &:not(.offer):last-of-type {
-    overflow: hidden;
     &:after {
       content: '';
       width: 400px;
