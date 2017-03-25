@@ -131,7 +131,7 @@ background-image: -ms-linear-gradient( 90deg, rgb(206,206,206) 19%, rgba(206,206
     .middle_line           {   top: 11px;  margin: auto;}
     .bottom_line           {   bottom: 0px; margin: auto;}
 
-    &.active .top_line     {   @include transform(rotate(45deg)); top: 45%;}
+    &.active .top_line     {   @include transform(rotate(45deg)); top: 36%;}
     &.active .bottom_line  {   @include transform(rotate(-45deg)); bottom: 45%;}
     &.active .middle_line  {   width: 0; left: 50%;}
 
