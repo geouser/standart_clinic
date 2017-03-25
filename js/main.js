@@ -98,10 +98,7 @@ jQuery(document).ready(function($) {
     /*---------------------------
                                   Sliders
     ---------------------------*/
-    $('.sertificates-slider').on('click', 'a', function(event) {
-        event.preventDefault();
-        $(this).fancybox();
-    });
+    
     $('.sertificates-slider').slick({
         arrows: false,
         dots: false,
@@ -110,7 +107,14 @@ jQuery(document).ready(function($) {
         slidesToScroll: 1
     });
 
-    
+    $(document).on('click', '.sertificates-slider a', function(e) {
+        e.preventDefault();
+        var $collection = $( '.sertificates-slider a' );
+      
+        $.fancybox.open( $collection, {}, $collection.index( this )  );
+      
+        return false;
+    });
 
 
 
