@@ -93,6 +93,10 @@
     top: 12px;
     left: 0;
     z-index: 101;
+    left: calc((100% - 1720px) / 2);
+        @media (max-width: 1740px) {
+            left: 40px;
+        }
 }
 
 /* ------------------------------------ */
