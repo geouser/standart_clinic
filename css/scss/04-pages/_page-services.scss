@@ -18,6 +18,7 @@
 .services-section {
     padding-top: 0;
     padding-bottom: 80px;
+    overflow: hidden;
 
     @media (min-width: 1201px) {
         background-image: url(../images/skew-bg-services.jpg);
@@ -34,15 +35,23 @@
         -webkit-justify-content: center;
         -ms-flex-pack: center;
         justify-content: center;
+
+        .col-6 {
+            @media (max-width: 1200px) {
+                width: 100%;
+                padding: 0 20px;
+            }
+        }
     }
 }
 
 .service-item {
     display: block;
-    background-color: #F1F1F1;
+    background-color: #fff;
     padding: 40px 80px;
     background-size: auto 100%;
     background-position: 100% 50%;
+    background-repeat: no-repeat;
     color: #000;
     position: relative;
     z-index: 1;
@@ -52,8 +61,24 @@
     transition: all 0.3s ease;
     height: 490px;
 
+    @media (max-width: 1740px) {
+        padding: 20px 40px;
+        font-size: 16px;
+        height: 300px;
+    }
+
+    @media (max-width: 1200px) {
+        height: auto;
+    }
+
+    @media (max-width: 767px) {
+        padding: 20px;
+    }
+
     &:hover {
         color: #fff;
+        box-shadow: 21px 21px 87px 0px rgba(0, 0, 0, 0.54); 
+        z-index: 5;
     }
 
     &:after {
@@ -69,6 +94,10 @@
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
+
+        @media (max-width: 767px) {
+            opacity: .7;
+        }
     }
 
     &:hover:after {
@@ -82,6 +111,15 @@
         width: 140px;
         margin: 0;
         margin-bottom: 25px;
+
+        @media (max-width: 1740px) {
+            width: 110px;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 1200px) {
+            width: 90px;
+        }
 
         img {
             display: block;
@@ -116,6 +154,11 @@
         -webkit-transition: all 0.3s ease;
         -o-transition: all 0.3s ease;
         transition: all 0.3s ease;
+
+        @media (max-width: 1740px) {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
     }
 
     &:hover &__title {
